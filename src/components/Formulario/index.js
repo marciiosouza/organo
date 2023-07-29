@@ -4,22 +4,8 @@ import CampoTexto from "../CampoTexto"
 import ListaSuspensa from "../ListaSuspensa"
 import "./Formulario.css"
 
-function Formulario() {
-  const times = [
-    "",
-    "Programação",
-    "Front-End",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inivação e Gestão",
-  ]
-
-  // function aoSalvar(evento) {
-  //   evento.preventDefault()
-  //   console.log('Form foi submetido')
-  // }
+const Formulario = (props) => {
+  
 
   const [nome, setNome] = useState("")
   const [cargo, setCargo] = useState("")
@@ -29,7 +15,12 @@ function Formulario() {
   // Arrow Function
   const aoSalvar = (evento) => {
     evento.preventDefault()
-    console.log("Form foi submetido => ", nome, cargo, imagem, time)
+    props.aoColaboradorCadastrado({
+      nome,
+      cargo,
+      imagem,
+      time
+    })
   }
 
   return (
@@ -60,9 +51,9 @@ function Formulario() {
         <ListaSuspensa
           obrigatorio={true}
           label="Time"
-          itens={times}
+          itens={props.times}
           valor={time}
-          aoAlterado={valor => setTime(valor)}
+          aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar card</Botao>
       </form>
@@ -70,4 +61,4 @@ function Formulario() {
   )
 }
 
-export default Formulario
+export default Formulario;
