@@ -1,29 +1,41 @@
-<h1 align="center"> ORGANO </h1>
+![Cover](./.github/thumbnail.png)
 
+## 🚀 Organo
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
-</p>
+O ORGANO é uma aplicação Web projetada para facilitar o cadastro de pessoas e a atribuição de cargos relacionados às áreas de uma organização. Objetivo é oferecer uma solução intuitiva e prática para gerenciar informações sobre colaboradores, permitindo que sejam atribuídos cargos de forma eficiente e organizada.
 
-
-
-<br>
-
-
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML e CSS
-- JavaScript
-- React
-- Git e Github
-- Figma
-
-## 💻 Projeto
-
-O projeto ORGANO é uma aplicação web simples que permite o cadastro de pessoas e a adição de cargos relacionados às áreas da organização. A ideia principal é oferecer uma forma intuitiva e prática para gerenciar informações sobre os colaboradores de uma empresa ou instituição, atribuindo a eles cargos que estejam relacionados às áreas em que atuam.
+- **_Desenvolvida com React, JavaScript_**
 
 ---
+
+## 💻 Instalação
+
+Siga estas etapas para configurar e executar o projeto:
+
+**1. Clone este repositório:**
+
+```bash
+git clone https://github.com/marciiosouza/organo.git
+```
+
+**2. Acesse o diretório do projeto:**
+
+```bash
+cd organo
+```
+
+**3. Instale as dependências:**
+
+```bash
+npm install
+```
+
+## 👨🏽‍💻 Como usar
+
+Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
+
+```bash
+npm start
+```
+
+Isso iniciará o servidor e você poderá acessar o aplicativo no navegador em http://localhost:3000/
